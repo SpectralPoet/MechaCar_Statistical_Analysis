@@ -28,3 +28,15 @@ The R-squared of our model is 0.7149, which means that it accurately explains ab
 ### The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
 The total variance is within acceptable range. However, lots one and two have well within acceptable variance, but lot three has a variance of over 170PSI, which is significantly above the acceptable range.
+
+## T-Tests on Suspension Coils 
+
+![t_tests](https://user-images.githubusercontent.com/21095468/134446201-607dbb04-479a-4045-80a5-0c5ed3cc1c67.png)
+### Summary
+Lots one and two have p values significantly over the 0.05 significance, which leads us to conclude that the means are statistically similar to 1500, whereas lot three's p value is 0.04, leading us to conclude that the mean value is not 1500. The significantly negative t value leads us to conclude that lot 3's manufacturing consistently produces lower than specified PSI.
+
+## Study Design: MechaCar vs Competition
+
+I think that maintenance cost would be a fascinating study to design due to the difficulty of retriving reliable data I would imagine since it would rely on consumer reporting.
+
+The primary metric being tested would be $ per year spent by clients on maintenance of their vehicles. There are many revealing statisticals tests that could be done with such data, but for these purposes I would like to design a test which would determine the variables which contribute to increased costs of maintenance. Linear regression modeling would be ideal for this, or another kind of multivariate testing if the linear model proved insufficient, and could help us identify which variables led to the most maintenance cost burden on customers. Many kinds of data could be useful for this, but important would be the age of the vehicle, the number of miles on the vehicle, the conditions of roads frequently driven on, the driver's history of traffic violations, weather in the area.. there are likely to be many contributing variables and finding an ideal model would be extremely difficult, but thus interesting. The null or alternative hypothesis in this case would be an arbitrarily decided statistical signifigance of the measured data, null meaning insigificant and alternative meaning significant.
